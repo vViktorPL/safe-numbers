@@ -1,0 +1,33 @@
+{
+  "name": "safe-numbers",
+  "version": "0.0.1",
+  "description": "Type safe numbers e.g. in specific range.",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "tsc --noEmit tests/types/index.ts",
+    "build": "tsc",
+    "prepublish": "npm run test && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vViktorPL/safe-numbers.git"
+  },
+  "keywords": [
+    "typescript",
+    "number",
+    "typesafe"
+  ],
+  "author": "Wiktor Toporek <wtoporek@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vViktorPL/safe-numbers/issues"
+  },
+  "homepage": "https://github.com/vViktorPL/safe-numbers#readme",
+  "devDependencies": {
+    "typescript": "^3.7.5"
+  }
+}
